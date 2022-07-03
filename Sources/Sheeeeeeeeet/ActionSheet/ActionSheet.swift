@@ -276,6 +276,7 @@ open class ActionSheet: UIViewController {
     open func refreshItems() {
         itemsTableView.tableFooterView = createFooter()
         itemsTableViewHeight.constant = CGFloat(itemsHeight)
+        itemsTableView.separatorStyle = .none
     }
     
     open func refreshButtons() {
